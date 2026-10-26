@@ -1,5 +1,4 @@
 
-/* 1. var — 10 Questions */
 
 var name = "Kavin"
 console.log(name)
@@ -53,7 +52,6 @@ movie = "Leo"
 console.log(movie)
 
 
-/* 2. let — 10 Questions */
 
 let studentAge = 23
 console.log(studentAge)
@@ -88,7 +86,7 @@ let fruit = "Apple"
 console.log(fruit)
 
 // let fruit = "Mango"
-// Error: Identifier 'fruit' has already been declared
+// error: Identifier 'fruit' has already been declared
 
 
 let hometown = "Salem"
@@ -110,12 +108,11 @@ let color = "Blue"
 color = "Green"
 
 // let color = "Red"
-// Error: Identifier 'color' has already been declared
+// error: Identifier 'color' has already been declared
 
 console.log(color)
 
 
-/* 3. const — 8 Questions */
 
 const birthYear = 2001
 console.log(birthYear)
@@ -132,13 +129,13 @@ console.log(organization)
 const officeName = "Stackly"
 
 // officeName = "Infosys"
-// Error: Assignment to constant variable
+// error: Assignment to constant variable
 
 
 const role = "Developer"
 
 // const role = "Tester"
-// Error: Identifier 'role' has already been declared
+// error: Identifier 'role' has already been declared
 
 
 const collegeName = "Anna University"
@@ -163,7 +160,6 @@ console.log(sport)
 console.log(tournament)
 
 
-/* 4. Printing Statements — 7 Questions */
 
 console.log("Praveen")
 
@@ -204,8 +200,6 @@ console.log(ageInYears)
 console.log(qualification)
 
 
-/* 5. alert() — 5 Questions */
-
 alert("Welcome to JavaScript")
 
 
@@ -225,7 +219,6 @@ var degree = "MCA"
 alert(degree)
 
 
-/* 6. prompt() — 5 Questions */
 
 var enteredName = prompt("What is your name?")
 console.log(enteredName)
@@ -247,7 +240,6 @@ var enteredUserAge = prompt("Enter your age")
 console.log(enteredUserAge)
 
 
-/* 7. confirm() & document.writeln() — 3 Questions */
 
 confirm("Do you know programming?")
 
@@ -259,7 +251,7 @@ document.writeln(batchMessage)
 confirm("Do you want to continue?")
 
 
-/* 8. Console Methods — 2 Questions */
+
 
 console.log("Application started")
 console.warn("Please check your input")
