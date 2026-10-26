@@ -1,14 +1,15 @@
 
 
 
-let fruits = ["apple", "banana", "mango", "orange", "pomegranate"]
+let fruits = ["grapes", "pineapple", "watermelon", "cherry", "pear"]
 
-fruits.push("kiwi", "papaya", "guava")
+fruits.push("lemon", "papaya", "plum")
 
 console.log(fruits)
 
 
-let numbers1 = [1, 2, 3, 4, 5, 6]
+
+let numbers1 = [12, 24, 36, 48, 60, 72]
 
 numbers1.pop()
 
@@ -16,7 +17,8 @@ console.log(numbers1)
 
 
 
-let names1 = ["Swathi", "Resh", "Dharsh", "Saadhana", "Varun"]
+
+let names1 = ["Arun", "Priya", "Kavin", "Divya", "Rahul"]
 
 names1.shift()
 
@@ -24,9 +26,9 @@ console.log(names1)
 
 
 
-let numbers2 = [20, 30, 40, 50]
+let numbers2 = [25, 35, 45, 55]
 
-numbers2.unshift(0, 10)
+numbers2.unshift(5, 15)
 
 console.log(numbers2)
 
@@ -39,6 +41,8 @@ arr1.splice(1, 2)
 console.log(arr1)
 
 
+
+
 let arr2 = [1, 2, 3, 4, 5]
 
 arr2.splice(2, 1, 100)
@@ -46,7 +50,8 @@ arr2.splice(2, 1, 100)
 console.log(arr2)
 
 
-let numbers3 = [1, 2, 3, 4, 5]
+
+let numbers3 = [8, 16, 24, 32, 40]
 
 numbers3.fill("hello", 2, 5)
 
@@ -55,11 +60,8 @@ console.log(numbers3)
 
 
 
-
-
-
-let values1 = [1, 2, 3]
-let values2 = [4, 5, 6]
+let values1 = [11, 22, 33]
+let values2 = [44, 55, 66]
 
 console.log(values1.concat(values2))
 
@@ -73,11 +75,16 @@ console.log(slicedArray)
 
 
 
-let arr4 = [1, 2, [3, 4, [5, 6]]]
 
-let flatValues1 = arr4.flat(Infinity)
 
-console.log(flatValues1)
+let arr4 = [5, 10, [15, 20, [25, 30]]]
+
+let flatValues = arr4.flat(Infinity)
+
+console.log(flatValues)
+
+
+
 
 
 
@@ -89,11 +96,16 @@ console.log(exists)
 
 
 
+
+
 let arr6 = [5, 10, 15, 20, 25]
 
 let position = arr6.indexOf(20)
 
 console.log(position)
+
+
+
 
 
 
@@ -105,7 +117,9 @@ console.log(lastPosition)
 
 
 
-let numbers4 = [10, 50, 70, 27, 84, 46, 29]
+
+
+let numbers4 = [42, 17, 63, 29, 81, 34, 56]
 
 numbers4.sort((a, b) => a - b)
 
@@ -113,7 +127,9 @@ console.log(numbers4)
 
 
 
-let numbers5 = [10, 50, 70, 27, 84, 46, 29]
+
+
+let numbers5 = [13, 26, 39, 52, 65, 78, 91]
 
 numbers5.reverse()
 
@@ -122,8 +138,13 @@ console.log(numbers5)
 
 
 
-let values3 = [9, 8, 7, 6]
-let values4 = [5, 4, 3, 2]
+
+
+
+
+
+let values3 = [2, 4, 6, 8]
+let values4 = [10, 12, 14, 16]
 
 let mergedArray = [...values3, ...values4]
 
@@ -131,16 +152,18 @@ console.log(mergedArray)
 
 
 
+
+
 let studentInfo = {
-    Sno: 1,
-    Sname: "Swathi",
-    Srole: "Developer"
+    studentId: 12,
+    studentName: "Arun",
+    studentRole: "Trainee"
 }
 
 let jobInfo = {
-    Jno: 2,
-    Jname: "Full Stack Developer",
-    Jsal: 7000
+    jobId: 25,
+    jobTitle: "Python Developer",
+    salary: 22000
 }
 
 let mergedObject = { ...studentInfo, ...jobInfo }
@@ -151,12 +174,14 @@ console.log(mergedObject)
 
 
 
-function value(a, b, ...c) {
+function displayValues(a, b, ...remaining) {
     console.log(a + b)
-    console.log(c)
+    console.log(remaining)
 }
 
-value(1, 2, 3, 4, 5, 6)
+displayValues(4, 8, 12, 16, 20, 24)
+
+
 
 
 
@@ -164,16 +189,22 @@ function one(a, b, ...c) {
     console.log(a + b + c[0] + c[1])
 }
 
-one(1, 2, 3, 4)
+one(2, 4, 6, 8)
 
 
 
-let values5 = [1, 2, 3]
-let values6 = [4, 5, 6]
+
+
+
+let values5 = [14, 28, 42]
+let values6 = [56, 70, 84]
 
 let copiedArray = [...values5]
 
 console.log(copiedArray)
+
+
+
 
 
 
@@ -199,7 +230,7 @@ console.log(d1, d2, d3, d4, d5, d6)
 
 
 
-let student = ["Swathi", 21, 9]
+let student = ["Kavin", 23, 8.6]
 
 let [studentName, studentAge, cgpa] = student
 
@@ -211,11 +242,13 @@ console.log(studentName, studentAge, cgpa)
 
 
 
+
+
 let company = {
-    name: "Swathi",
-    role: "Developer",
+    name: "Arun",
+    role: "Web Developer",
     location: {
-        mainlocation: "Chennai",
+        mainlocation: "Madurai",
         currentlocation: "Coimbatore"
     }
 }
@@ -233,9 +266,9 @@ console.log(companyName, companyRole, mainlocation, currentlocation)
 
 
 let studentDetails = {
-    name: "Swathi",
+    name: "Priya",
     address: {
-        city: "Thambikottai",
+        city: "Trichy",
         state: "Tamil Nadu"
     }
 }
@@ -249,8 +282,8 @@ console.log(city, state)
 
 
 let employeeDetails = {
-    name: "Swathi",
-    role: "Software Developer",
+    name: "Rahul",
+    role: "Backend Developer",
     location: {
         mainLocation: "Salem",
         currentLocation: "Chennai"
@@ -272,22 +305,21 @@ console.log(employeeName1, employeeRole1, mainLocation, currentLocation)
 
 
 
-let numbers6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let numbers6 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 
 numbers6.shift()
 numbers6.pop()
-numbers6.unshift(-1, 0)
+numbers6.unshift(1, 5)
 
 console.log(numbers6)
 
 
 
+let duplicateNumbers = [7, 14, 21, 7, 28, 7]
 
-let duplicateNumbers = [2, 3, 4, 2, 5]
-
-console.log(duplicateNumbers.includes(2))
-console.log(duplicateNumbers.indexOf(2))
-console.log(duplicateNumbers.lastIndexOf(2))
+console.log(duplicateNumbers.includes(7))
+console.log(duplicateNumbers.indexOf(7))
+console.log(duplicateNumbers.lastIndexOf(7))
 
 
 
@@ -295,13 +327,13 @@ console.log(duplicateNumbers.lastIndexOf(2))
 
 
 let employee1 = {
-    name: "Swathi",
-    age: 21
+    name: "Divya",
+    age: 25
 }
 
 let employee2 = {
-    role: "Full Stack Developer",
-    salary: 7000
+    role: "Software Engineer",
+    salary: 30000
 }
 
 let employee = { ...employee1, ...employee2 }
@@ -314,10 +346,7 @@ console.log(finalEmployeeRole)
 
 
 
-
-
-let numbers7 = [1, 2, [3, 4, [5, 6]]]
-
+let numbers7 = [10, 20, [30, 40, [50, 60]]]
 
 let flatArray = numbers7.flat(Infinity)
 let reversedArray = flatArray.reverse()
